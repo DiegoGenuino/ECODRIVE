@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: #fff;
+}
+
+::selection {
+    background-color: rgba(91, 255, 189, 0.323);
+    /* Fundo translúcido */
+    color: #fff;
+    /* Texto branco */
+    /* Sombra no texto */
+}
+
+
+
+
+
+header {
+    background-color: #2b272756;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 20px;
+    background: linear-gradient(116.825deg, #00c3ff9a 45%, #00FF99 100%);
+
+
+}
+
+.logo {
+    font-weight: 600;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.1s;
+
+}
+
+header nav a:hover {
+    color: #00ff84;
+
+
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.content {
+    max-width: 700px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #00ff84;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.app-text {
+    background: linear-gradient(116.825deg, #00c3ff9a 45%, #00FF99 100%);
+    background-clip: text;
+}
+
+.content .btn {
+    display: inline-block;
+    background-color: #00ff84;
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.content .btn:hover {
+    background-color: #00b060;
+}
+
+.mockup {
+    max-width: 300px;
+}
+
+.mockup img {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 51px 2px #5BFFBD;
+
+}
+
+.content h1,
+.content p {
+    background: linear-gradient(116.825deg, #48ff0588 41%, #00FF99 100%);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aurora-text 6s infinite;
+    transition: transform .1s linear;
+
+
+}
+
+
+
+/* Animação do gradiente */
+@keyframes aurora-text {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .container {
+        text-align: center;
+    }
+
+    .cards {
+         flex-direction: column;
+         align-items: center;
+    }
+
+  
+
+   
+}
+
+.content .btn {
+    display: inline-block;
+    background: linear-gradient(116.825deg, #00c3ff9a 45%, #00FF99 100%);
+    background-size: 400% 400%;
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    animation: aurora-btn 6s infinite;
+    border: none;
+    border-radius: 25px;
+}
+
+.content .btn:hover {
+    transform: scale(1.05);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+.aba-servicos {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.aba-servicos p {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.card {
+    width: 400px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card:nth-child(2){
+    background: white;
+    color: black;
+}
+
+.bi {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animação do gradiente no botão */
+@keyframes aurora-btn {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
